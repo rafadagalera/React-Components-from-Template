@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 function Header({ title, menuItems }) {
   return (
     <header>
@@ -6,7 +8,7 @@ function Header({ title, menuItems }) {
         <ul>
           {menuItems.map((menuItem, index) => (
             <li key={index}>
-              <a href={menuItem.link}>{menuItem.text}</a>
+              <Link to={menuItem.link}>{menuItem.text}</Link>
             </li>
           ))}
         </ul>

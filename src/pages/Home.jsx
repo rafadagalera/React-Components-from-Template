@@ -1,6 +1,6 @@
-import PersonalInfo from '../PersonalInfo';
-import Skills from '../Skills';
-import ContactForm from '../ContactForm'
+import PersonalInfo from '../Componentes/PersonalInfo';
+import Skills from '../Componentes/Skills';
+import ContactForm from '../Componentes/ContactForm'
 
 function Home() {
   const skillList = [
