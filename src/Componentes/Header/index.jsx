@@ -1,15 +1,16 @@
-function Header() {
+function Header({ title, menuItems }) {
   return (
     <header>
-      <h1>Meu site</h1>
+      <h1>{title}</h1>
       <nav>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+        <ul>
+          {menuItems.map((menuItem, index) => (
+            <li key={index}>
+              <a href={menuItem.link}>{menuItem.text}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }

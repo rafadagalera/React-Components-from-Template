@@ -1,22 +1,20 @@
 import Header from './Componentes/Header';
-import PersonalInfo from './Componentes/PersonalInfo';
-import Skills from './Componentes/Skills';
-import ContactForm from './Componentes/ContactForm';
+import Home from './Componentes/Home'
 import Footer from './Componentes/Footer'; 
 
+
 function App() {
- 
+  const menuItems = [
+    { text: 'Home', link: '/' },
+    { text: 'Sobre', link: '/sobre' },
+    { text: 'Serviços', link: '/servicos' },
+    { text: 'Contato', link: '/contato' },
+  ];
   return (
     <>
-      <Header />
-      <div className="mainInfo">
-        <section id='info'>
-          <PersonalInfo />
-          <Skills />
-        </section>
-        <ContactForm />
-      </div>
-      <Footer />
+        <Header title="Meu Site" menuItems={menuItems} />
+        <Home/>
+        <Footer />
     </>
   )
 }
