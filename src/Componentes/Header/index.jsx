@@ -1,18 +1,15 @@
-import {Link} from 'react-router-dom';
-
-function Header({ title, menuItems }) {
+function Header() {
   return (
     <header>
-      <h1>{title}</h1>
+      <h1>Meu site</h1>
       <nav>
-        <ul>
-          {menuItems.map((menuItem, index) => (
-            <li key={index}>
-              <Link to={menuItem.link}>{menuItem.text}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
   );
 }
