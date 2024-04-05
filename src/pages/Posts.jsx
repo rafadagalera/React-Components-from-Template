@@ -7,7 +7,7 @@ export default function Posts(props) {
         <ul>
          {props.posts.map((post) => {
                 return <li key={post.id}>
-                    <Link to='Site'>{post.title}</Link></li>
+                    <Link to={post.title}>{post.title}</Link></li>
             })
          }
         </ul><br/>
