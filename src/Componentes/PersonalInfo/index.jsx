@@ -1,11 +1,11 @@
-function PersonalInfo({ name, email, phone }) {
+function PersonalInfo() {
   return (
-      <div className="personal-info">
+    <div className="personal-info">
         <h2>Informações Pessoais</h2>
-        <p>Nome: {name}</p>
-        <p>Email: {email}</p>
-        <p>Telefone: {phone}</p>
-      </div>
+        <p>Nome: João</p>
+        <p>Email: joao@example.com</p>
+        <p>Telefone: (00) 12345-6789</p>
+  </div>
   );
 }
 
