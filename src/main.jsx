@@ -7,14 +7,8 @@ import Sobre from './pages/Sobre'
 import Servicos from './pages/Servicos'
 import PageNotFound from './pages/PageNotFound'
 import Home from './pages/Home'
-import Posts from './pages/Posts.jsx';
-import PostUnico from './pages/PostUnico';
 import './index.css'
 
-const posts = [
-  {id: 1, title: 'Site'},
-  {id: 2, title: 'E-commerce'}
-];
 
 
 const router = createBrowserRouter([{
@@ -25,19 +19,6 @@ const router = createBrowserRouter([{
     {
       path: 'servicos',
       element: <Servicos/>,
-      children: [
-        {index: true, element: <Link to='posts'> Veja nossos projetos</Link>},
-        {
-          path: 'posts',
-          element: <Posts posts={posts} />,
-          children: [
-            {
-              path: ':postName',
-              element: <PostUnico />,
-            },
-          ],
-        },
-      ],
     },
     {
       path: 'contato',
