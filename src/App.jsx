@@ -5,9 +5,9 @@ import {Outlet} from 'react-router-dom';
 function App() {
   return (
         <>
-          <Header/>
+          <Header titulo='HAHAHA'/>
           <Outlet/>
-          <Footer />
+          <Footer foot= 'BOLOLO'/>
         </>
   )
 }
